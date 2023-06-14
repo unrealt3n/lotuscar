@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&family=Overpass:wght@300;400;500;600;800&display=swap');
+
+:root {
+  --font-family: 'Overpass', sans-serif;
+  --yellow: #e8e80f;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 6px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+/* ::-webkit-scrollbar-corner {
+  background: #000;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  align-items: center;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Overpass', sans-serif;
+}
+
+/* sectino 1 */
+.section1 {
+  height: 100vh;
+  width: 100%;
+}
+
+#video1 {
+  z-index: -1;
+  width: 100%;
+}
+
+.lotus {
+  margin-left: 45%;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.menu {
+  margin-left: 40%;
+}
+
+.nav-bar {
+  z-index: 1;
+  height: 80px;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 20px;
+}
+
+.video-btn {
+  position: absolute;
+  bottom: 160px;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+}
+
+.btn1-1 {
+  outline: none;
+  color: black;
+  background-color: var(--yellow);
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition: all .5s;
+}
+
+.btn1-1 span {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.btn1-1:hover span {
+  opacity: 1;
+  translate: 10px;
+}
+
+.btn1-1:hover {
+  padding-right: 20px;
+}
+
+.btn2-1 {
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+.btn2-1 span {
+  transition: all .5s;
+}
+
+.btn2-1:hover span {
+  translate: 10px;
+
+}
+
+
+.vidbtn1 {
+  position: absolute;
+  left: 35.5%;
+  transition: ease-in .5s;
+}
+
+.vidbtn2 {
+  position: absolute;
+  left: 50.5%;
+  transition: ease-in-out;
+}
+
+
+/* section2 */
+
+.section2 {
+  margin-top: 60px;
+  height: 40.5rem;
+  color: black;
+  padding-top: 10%
+}
+
+.sec2-1 h1 {
+  font-weight: 100;
+  font-size: 60px;
+}
+
+.sec2-1 button {
+  margin-top: 10px;
+}
+
+.sec2-1 {
+  margin-left: 10%;
+}
+
+.sec2-img {
+  width: 100vw;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.bx-chevron-left {
+  margin-left: 4.5rem;
+  margin-top: -4rem;
+}
+
+#evija {
+  width: 190rem;
+  height: 35rem;
+  position: relative;
+  margin-left: -7rem;
+  bottom: 6rem;
+}
+
+.bx-chevron-right {
+  position: relative;
+  bottom: 2.2rem;
+  right: 5rem;
+
+}
+
+/* section 3 */
+
+.section3 {
+  height: 150vh;
+  background-color: #f2f1f0;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Overpass Mono', monospace;
+}
+
+.video-holder {
+  position: relative;
+  top: 2rem;
+  height: 100vh;
+}
+
+.video-holder video {
+  position: relative;
+  left: 8%;
+  width: 85%;
+  height: 100%;
+}
+
+.sec3-text {
+  color: black;
+  justify-content: flex-start;
+  position: relative;
+  top: 5rem;
+  left: 8%;
+  width: 85%;
+}
+
+.sec3-text p {
+  position: relative;
+  right: 7rem;
+  font-weight: 300;
+  color: black;
+  line-height: .6cm;
+  font-size: 13px;
+  float: right;
+}
+
+.sec3-text .btns {
+  position: relative;
+  top: 2rem;
+}
+
+.sec3-text .btn1-3 {
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition: all .5s;
+  color: #fdef00;
+  background-color: black;
+}
+
+.btn1-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sec3-text .btn1-3:hover span {
+  opacity: 1;
+  translate: 5px;
+}
+
+.btn1-3 span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.btns .btn2-1 {
+  color: black;
+}
+
+.sec3-text .btn2 {
+  color: black;
+  background-color: transparent;
+}
+
+/* section 4 */
+
+.section4 {
+  position: relative;
+  top: 7rem;
+  color: black;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4 button {
+  background-color: transparent;
+  padding: 10px 20px;
+  outline: none;
+  border-color: black;
+  border-width: 1px;
+  transition: all 1s;
+}
+
+.section4 button:hover {
+  background-color: black;
+  color: white;
+}
+
+.sec4div1 {
+  width: 50%;
+  height: 80%;
+}
+
+.sec4div1 img {
+  position: relative;
+  left: 8rem;
+}
+
+.sec4-text {
+  position: relative;
+  left: 10rem;
+  top: 3rem;
+}
+
+.sec4-text p {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.sec4-text button {
+  font-family: 'Overpass', sans-serif;
+  margin-top: 1rem;
+  letter-spacing: .05cm;
+  padding: 20px 30px;
+  font-weight: 500;
+}
+
+.sec4div2 {
+  width: 50%;
+  height: 80%;
+
+}
+
+.sec4div2 img {
+  position: relative;
+  left: 3rem;
+}
+
+
+.sec4-text h5 {
+  font-weight: 300;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.sec4div2 .sec4-text {
+  position: relative;
+  left: 5rem;
+}
+
+/* section 5 */
+
+.section5 {
+  background-color: black;
+  /* height: 141vh; */
+  height: 122vh;
+}
+
+.sec5-1 {
+  width: 55rem;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.sec5-1 img {
+  z-index: -1;
+  width: 100%;
+
+}
+
+.sec5_1_text {
+  position: relative;
+  bottom: 20rem;
+  left: 8rem;
+  z-index: 1;
+  color: white;
+  line-height: 3.9rem;
+}
+
+.sec5_1_text h3 {
+  color: var(--yellow);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 3.7rem;
+}
+
+.sec5-main {
+
+  display: flex;
+}
+
+.sec5-main button {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 5rem;
+  top: 11rem;
+  height: 4rem;
+  width: 27rem;
+  background-color: black;
+  border: solid 1px;
+  border-color: rgba(255, 255, 255, 0.652);
+}
+
+.bx-current-location {
+  margin-left: 6px;
+}
+
+.text-box input {
+  color: rgba(255, 255, 255, 0.734);
+  position: relative;
+  bottom: 10PX;
+  margin-left: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.bx-search {
+  margin-left: 8rem;
+}
+
+.section5 #lotus-logo {
+  position: relative;
+  left: 46.8%;
+  top: 3.2rem;
+}
+
+.sec5-3 {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.hr {
+  width: 80%;
+  height: 1px;
+  margin-left: 10%;
+  margin-top: 9%;
+  background-color: yellow;
+}
+
+.sec5-4 {
+  width: 70%;
+  left: 10rem;
+  position: relative;
+  top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sec5-4 h4 {
+  font-weight: 500;
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  color: var(--yellow);
+
+}
+
+.sec5-sm {
+  display: flex;
+  flex: 2;
+  align-items: flex-end;
+  position: relative;
+  top: 4rem;
+}
+
+.sec5-sm button {
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: transparent;
+  padding: 5px 5px;
+  outline: none;
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+
+.sec5-lists{
+  display: flex;
+  flex: 3;
+  margin-left: -14rem;
+  justify-content: space-between;
+}
+
+.models {
+  position: relative;
+  left: 8rem;
+  line-height: 2rem;
+}
+
+.buy {
+  position: relative;
+  left: 8rem;
+  line-height: 2rem;
+
+}
+
+.services {
+  position: relative;
+  left: 5rem;
+  line-height: 2rem;
+
+}
+
+.hr2 {
+  position: relative;
+  top: 10rem;
+  margin-left: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: var(--yellow);
+
+}
+
+.options{
+  position: relative;
+  top: 12rem;
+  font-weight: 100;
+}
+
+.options1 {
+  width: 50rem;
+  position: relative;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.options2 {
+  display: flex;
+  width: 50rem;
+  position: relative;
+  margin-left: 96rem;
+  top: -1rem;
+}
+
+/* section 6 */
+.section6 {
+  background-color: white;
+  position: relative;
+  top: 30rem;
+  height: 1rem;
+}
+
+.section6 p {
+  color: black;
+  position: relative;
+  bottom: 9rem;
+  left: 8rem;
+}
+
+.options2 .square{
+  position: relative;
+  top: -.5rem;
+  margin-left: 1rem;
+  height: 1rem;
+  width: 1rem;
+  padding: 5px 5px;
+  background-color: transparent;
+  border: 1px solid var(--yellow);
+}
